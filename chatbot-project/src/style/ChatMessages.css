@@ -1,0 +1,15 @@
+.chat-messages-container {
+    flex-grow: 1;
+    margin-top: 20px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.welcome-message {
+    color: rgb(160, 160, 160);
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    padding: 0 15px;
+}
+  
