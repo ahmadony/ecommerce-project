@@ -4,13 +4,11 @@ import '../pages/HomePage.css'
 function HomePage() {
     return (
         <>
+            <title>Ecommerce Project</title>
             <div className="header">
                 <div className="left-section">
-                    <a href="index.html" className="header-link">
-                        <img className="logo"
-                            src="images/logo-white.png" />
-                        <img className="mobile-logo"
-                            src="images/mobile-logo-white.png" />
+                    <a href="index.html" className="Logo">
+                        Ecommerce
                     </a>
                 </div>
 

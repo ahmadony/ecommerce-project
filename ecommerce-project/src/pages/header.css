@@ -25,6 +25,22 @@
   }
 }
 
+.header .Logo {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.header .Logo:hover{
+  color: #FFD814;
+}
+
 .header .header-link {
   display: inline-block;
   padding: 6px 9.5px;
@@ -38,13 +54,9 @@
   border: 1px solid white;
 }
 
-.header .logo {
+.header .header-link {
   height: 26px;
   margin-top: 1px;
-}
-
-.header .mobile-logo {
-  display: none;
 }
 
 @media (max-width: 675px) {

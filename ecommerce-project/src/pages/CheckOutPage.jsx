@@ -1,15 +1,15 @@
-import '../pages/CheckOutPage.css';
-import '../pages/CheckOutPage-header.css';
+import '../pages/CheckoutPage.css';
+import '../pages/CheckoutPage-header.css';
 
-function CheckOutPage() {
+function CheckoutPage() {
     return (
         <>
+            <title>Checkout</title>
             <div className="checkout-header">
                 <div className="header-content">
                     <div className="checkout-header-left-section">
-                        <a href="index.html">
-                            <img className="logo" src="images/logo.png" />
-                            <img className="mobile-logo" src="images/mobile-logo.png" />
+                        <a href="index.html" className="logo">
+                            Ecommerce
                         </a>
                     </div>
 
@@ -220,4 +220,4 @@ function CheckOutPage() {
     );
 }
 
-export default CheckOutPage;
+export default CheckoutPage;

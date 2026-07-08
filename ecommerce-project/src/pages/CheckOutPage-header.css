@@ -26,14 +26,18 @@
   width: 200px;
 }
 
-.checkout-header .logo {
-  height: 26px;
-  margin-top: 0px;
+.logo {
+  text-decoration: none;
+  color: #212121;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
-.checkout-header .mobile-logo {
-  display: none;
+.logo:hover{
+  color: rgb(8, 79, 45);
 }
+
 
 /* @media is used to create responsive design (making the
    website look good on any screen size). This @media
