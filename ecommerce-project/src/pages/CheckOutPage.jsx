@@ -1,5 +1,6 @@
-import '../pages/CheckoutPage.css';
-import '../pages/CheckoutPage-header.css';
+import { Link } from 'react-router';
+import './CheckoutPage.css';
+import './CheckoutPage-header.css';
 
 function CheckoutPage() {
     return (
@@ -8,9 +9,9 @@ function CheckoutPage() {
             <div className="checkout-header">
                 <div className="header-content">
                     <div className="checkout-header-left-section">
-                        <a href="/" className="logo">
+                        <Link to="/" className="logo">
                             Ecommerce
-                        </a>
+                        </Link>
                     </div>
 
                     <div className="checkout-header-middle-section">
