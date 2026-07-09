@@ -1,11 +1,13 @@
 import '../pages/OrderPage.css';
+import '../pages/header.css';
 function OrderPage() {
     return (
         <>
             <title>Orders</title>
+
             <div className="header">
                 <div className="left-section">
-                    <a href="/" className="Logo">
+                    <a href="/" className="logo">
                         Ecommerce
                     </a>
                 </div>

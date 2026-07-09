@@ -25,21 +25,23 @@
   }
 }
 
-.header .Logo {
+.header .logo {
   color: white;
   text-decoration: none;
   font-size: 22px;
   font-weight: 700;
   letter-spacing: 0.5px;
-
   display: flex;
   align-items: center;
   height: 100%;
-}
-
-.header .Logo:hover{
-  color: #FFD814;
-}
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 2px;
+  padding: 6px 9.5px;
+  }
+  .header .logo:hover {
+  color: white;
+  border: 1px solid white;
+  }
 
 .header .header-link {
   display: inline-block;
@@ -59,16 +61,12 @@
   margin-top: 1px;
 }
 
+
 @media (max-width: 675px) {
   .header .logo {
     display: none;
   }
 
-  .header .mobile-logo {
-    display: block;
-    height: 26px;
-    margin-top: 1px;
-  }
 }
 
 .header .middle-section {
