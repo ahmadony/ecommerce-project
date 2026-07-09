@@ -1,7 +1,7 @@
 import { Link } from 'react-router';
 import './CheckoutPage.css';
 import './CheckoutPage-header.css';
-
+import HomePage from './HomePage';
 function CheckoutPage() {
     return (
         <>
