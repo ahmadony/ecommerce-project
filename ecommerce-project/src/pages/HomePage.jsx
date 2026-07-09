@@ -63,7 +63,6 @@ function HomePage() {
                                         Add to Cart
                                     </button>
                                 </div>
-                            
                         );
                     })}
 
