@@ -7,11 +7,11 @@ function HomePage() {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
     useEffect(() => {
-        axios.get('http://localhost:3000/api/products')
+        axios.get('/api/products')
             .then((response) => {
                 setProducts(response.data);
             });
-        axios.get('http://localhost:3000/api/cart-item')
+        axios.get('/api/cart-item')
             .then((response) => {
                 setCart(response.data);
             });
