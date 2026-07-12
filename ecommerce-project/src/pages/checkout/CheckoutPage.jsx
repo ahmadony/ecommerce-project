@@ -39,6 +39,7 @@ function CheckoutPage({ cart, loadCart }) {
                     />
                     <PaymentSummary
                         paymentSummary={paymentSummary}
+                        loadCart = {loadCart}
                     />
 
                 </div>
