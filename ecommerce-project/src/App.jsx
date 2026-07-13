@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import HomePage from './pages/home/HomePage';
 import CheckoutPage from './pages/checkout/CheckoutPage';
 import OrderPage from './pages/orders/OrderPage';
-import TrackingPage from './pages/TeackingPage';
+import TrackingPage from './pages/tracking/TeackingPage';
 import './App.css'
 
 function App() {
