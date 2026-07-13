@@ -159,3 +159,10 @@
   height: 34px;
   margin-top: 1px;
 }
+
+.no-products {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 50px;
+  color: #555;
+}
