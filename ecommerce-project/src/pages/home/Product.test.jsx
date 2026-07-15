@@ -1,4 +1,4 @@
-import { it, expect, describe, vi } from "vitest";
+import { it, expect, describe, vi, beforeEach } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from '@testing-library/user-event';
 import axios from "axios";
@@ -7,9 +7,13 @@ import Product from './Product';
 vi.mock('axios');
 
 describe('product component', () => {
-    it('displays the product details correctly', () => {
 
-        const product = {
+    let product;
+
+    let loadCart;
+
+    beforeEach(() => {
+        product = {
             id: "15b6fc6f-327a-4ec4-896f-486349e85a3d",
             image: "images/products/intermediate-composite-basketball.jpg",
             name: "Intermediate Size Basketball",
@@ -19,9 +23,12 @@ describe('product component', () => {
             },
             priceCents: 2095,
             keywords: ["sports", "basketballs"]
-        };
+        }
 
-        const loadCart = vi.fn();
+        loadCart = vi.fn();
+    });
+
+    it('displays the product details correctly', () => {
 
         render(<Product product={product} loadCart={loadCart} />);
 
@@ -45,22 +52,9 @@ describe('product component', () => {
             screen.getByText('127')
         ).toBeInTheDocument();
     });
-    it('adds a product to a cart',async () =>  {
-        const product = {
-            id: "15b6fc6f-327a-4ec4-896f-486349e85a3d",
-            image: "images/products/intermediate-composite-basketball.jpg",
-            name: "Intermediate Size Basketball",
-            rating: {
-                stars: 4,
-                count: 127
-            },
-            priceCents: 2095,
-            keywords: ["sports", "basketballs"]
-        };
+    it('adds a product to a cart', async () => {
 
-        const loadCart = vi.fn();
-
-        render(<Product product = { product } loadCart = { loadCart } />);
+        render(<Product product={product} loadCart={loadCart} />);
 
         const user = userEvent.setup();
         const addToCartButoon = screen.getByTestId('add-to-cart-button');
@@ -74,5 +68,14 @@ describe('product component', () => {
             }
         );
         expect(loadCart).toHaveBeenCalled();
+    });
+
+    it('shows Added message after clicking', async () => {
+
+        render(<Product product={product} loadCart={loadCart} />);
+
+        await expect(
+            screen.getByText('Added')
+        ).toBeInTheDocument();
     });
 });
