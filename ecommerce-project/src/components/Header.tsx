@@ -3,7 +3,15 @@ import { useNavigate } from 'react-router';
 import { useState } from 'react';
 import './header.css';
 
-function Header({ cart }) {
+type HeaderProps = {
+    cart: {
+        productId: string;
+        quantity: number;
+        deliveryOptionId: string;
+    }[];
+};
+
+function Header({ cart }: HeaderProps) {
 
     const [searchTerm, setSearchTerm] = useState('');
     const navigate = useNavigate();
