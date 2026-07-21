@@ -1,6 +1,6 @@
 # React Basics — Projects Repository
 
-This repository contains multiple projects developed while learning React, TypeScript, and full-stack web development.
+This repository contains multiple projects developed while learning React and Javascript and a little of TypeScript, and full-stack web development.
 
 ## Repository Structure
 
